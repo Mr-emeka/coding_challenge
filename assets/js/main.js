@@ -1,7 +1,6 @@
 const access_token = "";
 
 const noOfRepository = 20;
-
 var query = `query ($noOfRepository: Int!) {
 	viewer {
 	  name
