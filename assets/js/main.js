@@ -1,4 +1,5 @@
-const access_token = "b2e5f7c6b3815f49c9df9523cc57936f7adab22f";
+const access_token = "";
+
 const noOfRepository = 20;
 
 var query = `query ($noOfRepository: Int!) {
@@ -71,8 +72,6 @@ document.addEventListener("DOMContentLoaded", () => {
 		injectData(data);
 	});
 	const injectData = ({ viewer }) => {
-		console.log(viewer);
-		console.log(viewer.repositories);
 		document.querySelector(".avatar").src = viewer.avatarUrl;
 		document.querySelector(".rounded_avatar_lg").src = viewer.avatarUrl;
 		document.querySelector(".bio").innerHTML = viewer.bio;
